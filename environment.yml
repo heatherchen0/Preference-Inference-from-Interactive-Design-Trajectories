@@ -1,0 +1,17 @@
+name: preference-inference
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - numpy=2.4.3
+  - pandas=3.0.1
+  - scipy=1.17.1
+  - pymc=5.28.1
+  - pytensor=2.38.2
+  - arviz=0.23.4
+  - matplotlib-base=3.10.8
+  # NetCDF backend for optional full posterior archives.
+  - h5netcdf=1.8.1
+  # Required for interactive HTML figures; absent from the old environment export.
+  - plotly>=5.22,<7
